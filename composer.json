@@ -1,0 +1,44 @@
+{
+  "name": "samerior/telegram",
+  "description": ":description",
+  "license": "license",
+  "authors": [
+    {
+      "name": "author name",
+      "email": "author email",
+      "homepage": "author homepage"
+    }
+  ],
+  "homepage": "https://github.com/samerior/telegram",
+  "keywords": [
+    "Laravel",
+    "Telegram"
+  ],
+  "require": {
+    "illuminate/support": "~5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Samerior\\Telegram\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Samerior\\Telegram\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Samerior\\Telegram\\TelegramServiceProvider"
+      ],
+      "aliases": {
+        "Telegram": "Samerior\\Telegram\\Facades\\Telegram"
+      }
+    }
+  }
+}
